@@ -7,7 +7,21 @@ pipeline {
         echo 'Cloning repository'
       }
     }
+    stage('Input')
+    {
+      steps {
+        input ('Do you want to proceed?')
+      }
+    }
+    stage('Build')
+    {
+      steps {
+        echo 'Building'
+      }
+
+        
     
    }
   }
+}
 
