@@ -7,17 +7,7 @@ pipeline {
         echo 'Cloning repository'
       }
     }
-    stage('Build')
-    {
-      steps {
-        bat 'javac HelloWorld.java'
-      }
-    }
-    stage('Run')
-    {
-      steps {
-        bat 'java Hello'
-      }
-    }
+    
+   }
   }
-}
+
